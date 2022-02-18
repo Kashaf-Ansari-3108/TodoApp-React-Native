@@ -74,12 +74,12 @@ function App() {
   const [text, setText] = useState('')
   const [list, setList] = useState([])
   const [isEdit, setIsEdit] = useState(false)
-  const [indexVAL, setindexVal] = useState()
+  const [indexVal, setindexVal] = useState()
 
   const add = () => {
     if (isEdit) {
       // editing 
-      list[indexVAL] = text
+      list[indexVal] = text
       setList([...list])
       setIsEdit(false)
       setText('')
